@@ -1,0 +1,8 @@
+node_modules/
+wrangler.toml
+.wrangle
+*.env
+backend/.wrangler/tmp/
+backend/.wrangler/
+backend/.wrangler/cache/
+backend/.wrangler/dev/
