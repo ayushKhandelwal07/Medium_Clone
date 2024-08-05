@@ -17,6 +17,11 @@ export const Blogs = () => {
       </div>
   }
 
+  const today = new Date();
+  const date = today.getDate(); //2nd December 2023
+  const month = today.getMonth()+1;
+  const year = today.getFullYear();
+
   return (<>
     <div>
       <Appbar />
@@ -29,7 +34,7 @@ export const Blogs = () => {
               authorName={blog.auhtor?.name || "Anonymous"}
               title={blog.title}
               content={blog.content}
-              publishedDate={"2nd Feb 2024"}
+              publishedDate={`${date}nd ${month} ${year}`}
             />
           ))}
         </div>
